@@ -1,0 +1,110 @@
+/* Responsive BreakPoint */
+
+/* Ukuran Table  */
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+}
+
+
+/* Ukuran Mobile */
+@media screen and (max-width: 576px) {
+  body {
+    overflow-x: visible;
+  }
+
+  nav h1 {
+    margin-left: -50px;
+  }
+
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .9);
+    z-index: -1;
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .content {
+    display: inherit;
+    /* padding: 10px/; */
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .content .judul {
+    margin: auto;
+  }
+
+  .about-container {
+    display: inherit;
+    padding-top: 120px;
+  }
+
+  .image-about img {
+    width: 450px;
+    margin-left: -50px;
+    margin-bottom: 20px;
+  }
+
+  .skill-container {
+    padding-top: 10px;
+    margin-left: -20px;
+    margin-top: -50px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+
+  .skill-judul {
+    padding-top: 50px;
+    transform: translateY(-40px);
+  }
+  
+  #projects {
+    height: fit-content;
+  }
+
+  .projects {
+    margin-top: 200px;
+    display: inherit;
+  }
+
+  .content-projects {
+    /* display: inherit; */
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+  }
+
+  .card-projects {
+    /* margin-left: -25px; */
+    width: 200px;
+  }
+
+  .card-projects img {
+    width: 150px;
+  }
+
+  .card-projects p {
+    font-size: .5em;
+  }
+/* 
+  .footer {
+    margin-top: 1000px;
+  } */
+}
