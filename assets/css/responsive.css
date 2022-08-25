@@ -52,15 +52,45 @@
     margin: auto;
   }
 
+  .content .judul h1 span, .content .judul p {
+    font-size: .8em;
+  }
+
   .about-container {
+    position: relative;
     display: inherit;
-    padding-top: 120px;
+    margin: auto;
+    padding-top: 30px;
+  }
+
+  .image-about {
+    margin-left: -80px;
+    position: absolute;
+    left: -60px;
+    margin-bottom: 13px;
+  }
+
+  .img-wrapper {
+    width: max-content;
+    margin: auto;
   }
 
   .image-about img {
-    width: 450px;
-    margin-left: -50px;
-    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .about {
+    position: absolute;
+    top:  250px;
+    left: 50px;
+  }
+
+  .about h4, .about p {
+    font-size: .8em;
+  }
+
+  #skill {
+    height: fit-content;
   }
 
   .skill-container {
@@ -71,9 +101,17 @@
     column-gap: 20px;
   }
 
+  .skill-container .skill {
+    width: 150px;
+  }
+
+  .skill img {
+    width: 80px;
+  }
+
   .skill-judul {
-    padding-top: 50px;
-    transform: translateY(-40px);
+    /* padding-top: 0px; */
+    transform: translateY(-60px);
   }
   
   #projects {
@@ -81,27 +119,27 @@
   }
 
   .projects {
-    margin-top: 200px;
+    /* margin-top: 200px; */
     display: inherit;
   }
 
   .content-projects {
     /* display: inherit; */
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 50px;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .card-projects {
     /* margin-left: -25px; */
-    width: 200px;
+    width: fit-content;
+    text-align: center;
   }
 
   .card-projects img {
-    width: 150px;
+    width: 100%;
   }
 
   .card-projects p {
-    font-size: .5em;
+    font-size: -7em;
   }
 /* 
   .footer {
